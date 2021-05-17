@@ -11,7 +11,7 @@ public class HelloController {
     @RequestMapping(value = "/hello")
     public ResponseEntity<?> hello(){
 
-        return ResponseEntity.ok("KOMO gaul skali le");
+        return ResponseEntity.ok("HALO DUNIA");
 
     }
 
