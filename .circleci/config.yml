@@ -19,7 +19,7 @@ jobs:
           name: Build
           command: mvn -B -DskipTests clean package
       - store_artifacts:
-          path: /tmp/test
+          path: target/*.jar /tmp/test
 
 workflows:
   # Below is the definition of your workflow.
