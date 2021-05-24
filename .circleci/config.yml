@@ -28,6 +28,7 @@ jobs:
           command: |
             echo $DOCKER_HUB_PASSWORD | docker login --username $DOCKER_USER --password-stdin
             docker build -t sky270691/test-docker:1.0 .
+            docker push sky270691/test-docker:1.0
 
 workflows:
   # Below is the definition of your workflow.
