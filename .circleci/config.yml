@@ -14,6 +14,9 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout
+
+      - setup_remote_docker:
+          version: 19.03.13
       # Use mvn clean and package as the standard maven build phase
       - run:
           name: Build
